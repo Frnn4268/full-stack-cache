@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const session = require('express-session');
 const RedisStore = require('connect-redis').default;
 const dotenv = require('dotenv');
@@ -9,6 +10,14 @@ dotenv.config();
 const client = require('./config/redisClient');
 
 const app = express();
+
+app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:80', 
+  methods: 'GET,POST',
+  credentials: true
+}));
 
 // Configure sessions with Redis as storage
 app.use(session({

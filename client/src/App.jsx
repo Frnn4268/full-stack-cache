@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './App.css';  // Añade una hoja de estilos para mejorar el diseño
+import './App.css';  
 
 function Home() {
   return <h1>Welcome to the Dashboard</h1>;
