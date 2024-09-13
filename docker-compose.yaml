@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Backend service
+  backend:
+    build:
+      context: ./app
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - SESSION_SECRET=123456
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+
+  # Client service
+  client:
+    build:
+      context: ./client
+    ports:
+      - "80:80"
+
+  # Redis service
+  redis:
+    image: redis:latest
+    ports:
+      - "6380:6379"
+
+networks:
+  default:
+    name: my-network
