@@ -55,7 +55,7 @@ function App() {
   };
 
   const getPageViews = () => {
-    fetch('/page-views')
+    fetch('/api/page-views')
       .then((res) => res.json())
       .then((data) => setPageViews(data.pageViews))
       .catch((err) => console.error('Error fetching page views:', err));
