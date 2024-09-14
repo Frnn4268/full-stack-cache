@@ -16,13 +16,9 @@ This project is a full-stack application consisting of a backend API built with 
 - `backend/:` Contains the Node.js and Express backend application.
 
 	- `index.js:` Main entry point of the backend application.
-
 	- `Dockerfile:` Dockerfile for building the backend image.
-
 	- `config/redisClient.js:` Redis client configuration.
-
 	- `routes/:` Express routes for API endpoints.
-
 	- `controllers/:` Controllers for handling API logic.
 
 - `client/:` Contains the React frontend application.
@@ -44,19 +40,19 @@ This project is a full-stack application consisting of a backend API built with 
 
 1. Clone the Repository
 
-```
-git clone https://github.com/Frnn4268/full-stack-cache.git
+	```
+	git clone https://github.com/Frnn4268/full-stack-cache.git
 
-cd full-stack-cache
-```
+	cd full-stack-cache
+	```
 
 2. Build and Run with Docker Compose
 
-```
-docker-compose up --build
-```
+	```
+	docker-compose up --build
+	```
 
-This command builds and starts all the services defined in docker-compose.yaml.
+	This command builds and starts all the services defined in docker-compose.yaml.
 
 ### Usage
 - Frontend: Access the React application at http://localhost.
