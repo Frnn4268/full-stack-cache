@@ -14,7 +14,6 @@ This project is a full-stack application consisting of a backend API built with 
 ## Project Structure
 
 - `backend/:` Contains the Node.js and Express backend application.
-
 	- `index.js:` Main entry point of the backend application.
 	- `Dockerfile:` Dockerfile for building the backend image.
 	- `config/redisClient.js:` Redis client configuration.
